@@ -24,3 +24,29 @@ To run this project locally:
 - Install Streamlit and Pandas:
   ```bash
   pip install streamlit pandas
+Running the App
+Clone this repository.
+Navigate to the project folder.
+Start the Streamlit app:
+bash
+Copy code
+streamlit run app.py
+Open your browser to http://localhost:8501.
+Usage
+Enter Loan Details: Fill in the loan amount, down payment, interest rate, loan term, and annual prepayment.
+Review Summary: View monthly EMI, total payment, and potential interest savings.
+Analyze Schedule: Check the amortization schedule table and the remaining balance over the years.
+Sample Code
+The main calculation logic uses a loop to apply monthly and annual prepayments, calculating the EMI based on:
+
+python
+Copy code
+monthly_payment = (
+    loan_amount * (monthly_interest_rate * (1 + monthly_interest_rate) ** number_of_payments)
+    / ((1 + monthly_interest_rate) ** number_of_payments - 1)
+)
+Deployment
+This app is deployed on Streamlit Cloud at Loan Repayment Calculator.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
