@@ -28,9 +28,9 @@ To run this project locally:
 1. Clone this repository.
 2. Navigate to the project folder.
 3. Start the Streamlit app:
-bash
-streamlit run app.py
-4. Open your browser to http://localhost:8501.
+   ```bash
+   streamlit run app.py
+5. Open your browser to http://localhost:8501.
    
 ### Usage
 1. Enter Loan Details: Fill in the loan amount, down payment, interest rate, loan term, and annual prepayment.
